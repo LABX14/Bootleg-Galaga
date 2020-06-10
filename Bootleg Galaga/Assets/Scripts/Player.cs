@@ -51,5 +51,22 @@ public class Player : MonoBehaviour
             transform.Rotate(0, 0, -turnSpeed * Time.deltaTime);
         }
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        // If the player runs into something, they should die
+        Die();
+    }
+
+    void Die()
+    {
+        // TODO: Write death code here. 
+        Destroy(this.gameObject);
+    }
+
+    private void OnDestroy()
+    {
+        GameManager.instance.player = null;
+    }
 }
 
