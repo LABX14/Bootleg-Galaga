@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 2817233114972688989}
   - component: {fileID: 2817233114972688988}
   - component: {fileID: 2817233114972688987}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -61,6 +61,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnSpeed: 200
   moveSpeed: 5
+  bulletPrefab: {fileID: 7924726472378891329, guid: 435fd68b7eb1d264d843fda03f043736,
+    type: 3}
 --- !u!212 &2817233114972688989
 SpriteRenderer:
   m_ObjectHideFlags: 0

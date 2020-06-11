@@ -6,7 +6,9 @@ public class Player : MonoBehaviour
 {
     public float turnSpeed = 90f; // Degrees per second
     public float moveSpeed = 5f; //Meters per second
+    public GameObject bulletPrefab;
     private Transform change;
+    public float bulletSpeed = 6f;
 
     // Start is called before the first frame update
     void Start()
@@ -32,10 +34,15 @@ public class Player : MonoBehaviour
         }
     }
 
+    // This spawns in the bullet and makes it shoot from the ship.  
     public void Shoot()
     {
-        // TOD): Implement shooting.
-        Debug.Log("Shooting not implemented yet.");
+        // You CAN do it this way, but it's long, and you shouldn't. 
+        // GameObject bullet = new GameObject();
+        // SpriteRenderer bulletSpriteRenderer = bullet.AddComponent<SpriteRenderer>() as SpriteRenderer;
+        GameObject bullet = Instantiate(bulletPrefab, transform.position, transform.rotation);
+        bullet.GetComponent<Bullet>().bulletSpeed = bulletSpeed;
+        Destroy(bullet, 2);
     }
 
     public void HandleRotation()
