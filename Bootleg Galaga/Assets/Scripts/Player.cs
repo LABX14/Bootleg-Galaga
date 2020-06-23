@@ -1,9 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
+
 
 public class Player : MonoBehaviour
 {
+    // public event Action PlayerDied;
     public float turnSpeed = 90f; // Degrees per second
     public float moveSpeed = 5f; //Meters per second
     public GameObject bulletPrefab;
@@ -65,9 +68,10 @@ public class Player : MonoBehaviour
         Die();
     }
 
-    void Die()
+    private void Die()
     {
         // TODO: Write death code here. 
+        EventBroker.CallPlayerDied();
         Destroy(this.gameObject);
     }
 

@@ -395,7 +395,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   score: 0
+  spawnDistance: 0
   player: {fileID: 1932426173}
+  playerPrefab: {fileID: 1932426173}
   enemyList: []
   enemyPrefabList:
   - {fileID: 1650794025}

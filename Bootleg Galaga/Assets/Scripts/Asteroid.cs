@@ -13,6 +13,7 @@ public class Asteroid : MonoBehaviour
         directionToMove = GameManager.instance.player.transform.position - transform.position;
         directionToMove.Normalize();
         targetPosition = GameManager.instance.player.transform.position;
+        // EventBroker.PlayerDied += DestroySelf;
     }
 
     private void Update()
@@ -25,7 +26,14 @@ public class Asteroid : MonoBehaviour
     private void OnDestroy()
     {
         GameManager.instance.enemyList.Remove(this.gameObject);
+        EventBroker.PlayerDied -= DestroySelf;
     }
+
+    private void DestroySelf()
+    {
+        Destroy(this.gameObject);
+    }
+
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
