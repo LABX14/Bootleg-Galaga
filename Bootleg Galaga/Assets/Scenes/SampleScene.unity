@@ -397,7 +397,8 @@ MonoBehaviour:
   score: 0
   spawnDistance: 0
   player: {fileID: 1932426173}
-  playerPrefab: {fileID: 1932426173}
+  playerPrefab: {fileID: 2817233114972688977, guid: fecdf62fd6821c94098e68eb71bb2f6e,
+    type: 3}
   enemyList: []
   enemyPrefabList:
   - {fileID: 1650794025}
@@ -418,6 +419,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 2817233114972688977, guid: fecdf62fd6821c94098e68eb71bb2f6e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2817233114972688976, guid: fecdf62fd6821c94098e68eb71bb2f6e,
         type: 3}
