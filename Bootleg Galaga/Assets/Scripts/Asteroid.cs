@@ -35,14 +35,22 @@ public class Asteroid : MonoBehaviour
     }
 
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnCollisionEnter2D(Collision2D otherObject)
     {
         Debug.Log("I'm touching something!");
-        Debug.Log(collision.gameObject.name);
-        if (collision.gameObject == GameManager.instance.player)
+        Debug.Log(otherObject.gameObject.name);
+        if (otherObject.gameObject == GameManager.instance.player)
         {
             Debug.Log("Ran into player game object");
             // This is what happens if the players hits an asteroid.
+        }
+
+        //Destroy bullet when it hits asteroid
+        if (otherObject.gameObject.GetComponent<Bullet>())
+        {
+            GameManager.instance.enemyList.Remove(this.gameObject);
+
+            Destroy(this.gameObject);
         }
     }
 

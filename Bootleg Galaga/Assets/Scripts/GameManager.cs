@@ -58,6 +58,7 @@ public class GameManager : MonoBehaviour
             // Spawn a new enemy if we have less than 3 enemies. 
             if (enemyList.Count < 3)
             {
+                Debug.Log("Bring it on!");
                 SpawnEnemy();
             }
         }

@@ -497,12 +497,12 @@ PrefabInstance:
     - target: {fileID: 4545009385108734858, guid: 3672692b28a219c45b77c91d86f667e0,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.29
+      value: 5.17
       objectReference: {fileID: 0}
     - target: {fileID: 4545009385108734858, guid: 3672692b28a219c45b77c91d86f667e0,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.99
+      value: 3.26
       objectReference: {fileID: 0}
     - target: {fileID: 4545009385108734858, guid: 3672692b28a219c45b77c91d86f667e0,
         type: 3}
@@ -596,12 +596,12 @@ PrefabInstance:
     - target: {fileID: 8588807508907072075, guid: 6a1659bf4b314384eb7aa568cd222ef6,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 8588807508907072075, guid: 6a1659bf4b314384eb7aa568cd222ef6,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 8588807508907072075, guid: 6a1659bf4b314384eb7aa568cd222ef6,
         type: 3}
@@ -621,12 +621,22 @@ PrefabInstance:
     - target: {fileID: 8588807508907072075, guid: 6a1659bf4b314384eb7aa568cd222ef6,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
+      value: -90
       objectReference: {fileID: 0}
     - target: {fileID: 5124763614864021664, guid: 6a1659bf4b314384eb7aa568cd222ef6,
         type: 3}
       propertyPath: rotationSpeed
       value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 5124763614864021664, guid: 6a1659bf4b314384eb7aa568cd222ef6,
+        type: 3}
+      propertyPath: rotateSpeed
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 5124763614864021664, guid: 6a1659bf4b314384eb7aa568cd222ef6,
+        type: 3}
+      propertyPath: moveSpeed
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6a1659bf4b314384eb7aa568cd222ef6, type: 3}
